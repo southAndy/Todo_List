@@ -1,0 +1,82 @@
+@use "../base/colors" as *;
+@use "../base/fonts" as *;
+@use "../base/breakpoints" as *;
+
+.addtask_box {
+  width: 100%;
+
+  @include breakpoints($pad-size) {
+    width: 620px;
+  }
+}
+
+.addtask_list {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 24px;
+  background-color: $gray-100;
+  margin-bottom: 3px;
+
+  //與頂部添加按鈕的距離
+  // margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+
+  .check_input {
+    width: 24px;
+    height: 24px;
+
+    :checked + &_input {
+      text-decoration: line-through;
+    }
+  }
+
+  > div {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  &_input {
+    font-size: 24px;
+    background-color: transparent;
+    width: 100%;
+    border: none;
+
+    margin-left: 16px;
+  }
+  &_icon {
+    display: flex;
+  }
+
+  &:hover {
+    background: #fff2dc;
+  }
+
+  span {
+    @include fonts-set(20px, $title-weight, $subtitle-style);
+    @include breakpoints($pad-size) {
+      @include fonts-set($title-size, $title-weight, $subtitle-style);
+    }
+  }
+  &_marked {
+    i {
+      height: 24px;
+      width: 24px;
+      &:hover,
+      &:focus,
+      &:active {
+        color: #f5a623;
+      }
+    }
+  }
+
+  &_edit {
+    margin-left: 10px;
+
+    i:hover {
+      color: $primary-color;
+    }
+  }
+}

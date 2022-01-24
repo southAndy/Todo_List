@@ -1,0 +1,45 @@
+@use "../base/fonts" as *;
+@use "../base/colors" as *;
+@use "../base/breakpoints" as *;
+
+nav {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  a {
+    @include fonts-set(18px, $title-weight, $title-style);
+    color: #00408b;
+    padding: 24px 0;
+    height: 100%;
+    margin-right: 1px;
+    flex-basis: 220px;
+    position: relative;
+
+    &:hover {
+      color: $white;
+    }
+
+    @include breakpoints($pad-size) {
+      @include fonts-set($title-size, $title-weight, $title-style);
+    }
+  }
+  .active {
+    color: white;
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      height: 3px;
+      width: 100px;
+      bottom: 0;
+      right: 10%;
+      border-bottom: solid 5px #333;
+
+      @include breakpoints($pad-size) {
+        width: 150px;
+        right: 15%;
+      }
+    }
+  }
+}

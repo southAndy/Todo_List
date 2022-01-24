@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Fontawesome-->
+    <script src="https://unpkg.com/vue@next"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="app">
+      <outer />
+      <!-- <inner /> -->
+    </div>
+
+    <script>
+      const inner = {
+        template: `<p>inner</p>`,
+      };
+      const outer = {
+        components: {
+          inner,
+        },
+        template: `
+          <p>outer</p>
+          <inner />
+        `,
+      };
+      const vm = Vue.createApp({
+        components: {
+          outer,
+        },
+      });
+      // vm.component("outer", outer);
+      vm.mount("#app");
+    </script>
+  </body>
+</html>

@@ -1,0 +1,10 @@
+@use "../base/colors" as *;
+
+body {
+  background-color: $gray-200;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: $primary-color;
+}

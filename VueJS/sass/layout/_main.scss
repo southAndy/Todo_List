@@ -1,0 +1,14 @@
+@use "../component/addbutton" as *;
+@use "../component/reminderlist" as *;
+@use "../component/reminder_content" as *;
+@use "../component//click_button";
+
+@use "../base/breakpoints" as *;
+
+main .container {
+  width: 100%;
+  @include breakpoints($pad-size) {
+    width: 620px;
+    margin: 0 auto;
+  }
+}

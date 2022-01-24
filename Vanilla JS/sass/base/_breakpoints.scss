@@ -1,0 +1,8 @@
+$pc-size: 992px;
+$pad-size: 768px;
+
+@mixin breakpoints($value) {
+  @media (min-width: $value) {
+    @content;
+  }
+}

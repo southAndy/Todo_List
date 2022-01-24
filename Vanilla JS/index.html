@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Fontawesome-->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <title>sAndy todoList</title>
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <a class="nav_item active" href="##" data-index="1">My Task</a>
+        <a class="nav_item progress" href="##" data-index="2">In Progress</a>
+        <a class="nav_item" href="##" data-index="3">Completed</a>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <div class="addtask_container">
+          <button class="addtask" type="button">+ Add Task</button>
+          <form class="edit_content display_none">
+            <div class="addtask_list">
+              <div class="addtask_list_content">
+                <input type="checkbox" class="check_input" />
+                <input
+                  type="text"
+                  class="addtask_list_input"
+                  placeholder="Type Something Here..."
+                />
+                <div class="addtask_list_icon">
+                  <a class="addtask_list_marked" href="##"
+                    ><i class="far fa-star star_icon"></i
+                  ></a>
+                  <a class="addtask_list_edit" href="##">
+                    <i class="fa-fw fas fa-pen pencil"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <section class="addtask_content">
+              <div class="time">
+                <span>
+                  <i class="far fa-calendar-alt"></i>
+                  Deadline
+                </span>
+                <div class="time_inputbox">
+                  <input type="date" />
+                  <input type="time" />
+                </div>
+              </div>
+              <div class="file">
+                <span>
+                  <i class="fas fa-file-word"></i>
+                  File
+                </span>
+              </div>
+              <div class="comment">
+                <span> <i class="far fa-comment-dots"></i> Comment </span>
+                <textarea
+                  name=""
+                  id=""
+                  cols="20"
+                  rows="10"
+                  placeholder="input your note:"
+                ></textarea>
+              </div>
+            </section>
+            <div class="confirm_buttonbox">
+              <button type="reset" class="button_cancel">X Cancel</button>
+              <button class="button_save">+ Add Task</button>
+            </div>
+          </form>
+        </div>
+        <section class="reminder_container">
+          <form class="addtask_list">
+            <div class="addtask_list_content">
+              <input id="item" type="checkbox" class="check_input" />
+              <input
+                type="text"
+                class="addtask_list_input"
+                placeholder="Type Something Here..."
+              />
+              <div class="addtask_list_icon">
+                <a class="addtask_list_marked" href="##"
+                  ><i class="far fa-star"></i
+                ></a>
+                <a class="addtask_list_edit" href="##">
+                  <i class="fas fa-pencil-alt"></i>
+                </a>
+              </div>
+            </div>
+          </form>
+        </section>
+      </div>
+    </main>
+  </body>
+  <script type="module" src="./Js/main.js"></script>
+</html>

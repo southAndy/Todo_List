@@ -1,0 +1,13 @@
+@use "../base//colors";
+.done {
+  text-decoration: line-through;
+  color: colors.$done_color;
+}
+
+.edit_mode {
+  background-color: colors.$edit_color;
+
+  &_icon {
+    color: colors.$edit_icon;
+  }
+}

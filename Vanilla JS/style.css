@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+nav {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+nav a {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Roboto-Medium";
+  color: #00408b;
+  padding: 24px 0;
+  height: 100%;
+  margin-right: 1px;
+  flex-basis: 220px;
+  position: relative;
+}
+nav a:hover {
+  color: #ffff;
+}
+@media (min-width: 768px) {
+  nav a {
+    font-size: 24px;
+    font-weight: 500;
+    font-family: "Roboto-Medium";
+  }
+}
+nav .active::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100px;
+  bottom: 0;
+  right: 10%;
+  border-bottom: solid 5px #333;
+}
+@media (min-width: 768px) {
+  nav .active::after {
+    width: 150px;
+    right: 15%;
+  }
+}
+
+.addtask_box {
+  margin-bottom: 30px;
+}
+
+.addtask {
+  margin-top: 10px;
+  padding: 15px;
+  width: 100%;
+  text-align: start;
+  font-size: 24px;
+  font-weight: 100;
+  font-family: "Roboto-Medium";
+  cursor: pointer;
+  background: #ffffff;
+  border: 2px solid #c8c8c8;
+  border-radius: 5px;
+}
+
+.display_none {
+  display: none !important;
+}
+
+.addtask_box {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .addtask_box {
+    width: 620px;
+  }
+}
+
+.addtask_list {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 24px;
+  background-color: #f2f2f2;
+  margin-bottom: 3px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.addtask_list .check_input {
+  width: 24px;
+  height: 24px;
+}
+:checked + .addtask_list .check_input_input {
+  text-decoration: line-through;
+}
+.addtask_list > div {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.addtask_list_input {
+  background-color: #f2f2f2;
+  width: 100%;
+  border: none;
+  margin-left: 16px;
+}
+.addtask_list_icon {
+  display: flex;
+}
+.addtask_list:hover {
+  background: #fff2dc;
+}
+.addtask_list span {
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "Roboto-Regular";
+}
+@media (min-width: 768px) {
+  .addtask_list span {
+    font-size: 24px;
+    font-weight: 500;
+    font-family: "Roboto-Regular";
+  }
+}
+.addtask_list_marked i {
+  height: 24px;
+  width: 24px;
+}
+.addtask_list_marked i:hover, .addtask_list_marked i:focus, .addtask_list_marked i:active {
+  color: #f5a623;
+}
+.addtask_list_edit {
+  margin-left: 10px;
+}
+.addtask_list_edit i:hover {
+  color: #4a90e2;
+}
+
+.addtask_content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #f2f2f2;
+  gap: 15px;
+}
+.addtask_content span {
+  margin-bottom: 5px;
+  display: block;
+}
+
+.time_inputbox {
+  margin-left: 20px;
+}
+
+.comment {
+  display: flex;
+  flex-direction: column;
+}
+.comment textarea {
+  resize: none;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.confirm_buttonbox {
+  display: flex;
+}
+.confirm_buttonbox button {
+  width: 50%;
+  padding: 15px;
+  border: 0;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Roboto-Regular";
+}
+@media (min-width: 768px) {
+  .confirm_buttonbox button {
+    font-size: 24px;
+    font-weight: 400;
+    font-family: "Roboto-Regular";
+  }
+}
+.confirm_buttonbox .button_cancel {
+  color: #d0021b;
+  background-color: #fff;
+}
+.confirm_buttonbox .button_save {
+  background-color: #4a90e2;
+  color: #fff;
+}
+
+main .container {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  main .container {
+    width: 620px;
+    margin: 0 auto;
+  }
+}
+
+body {
+  background-color: #e1e1e1;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #4a90e2;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=style.css.map */

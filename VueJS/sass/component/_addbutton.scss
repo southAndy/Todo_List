@@ -1,0 +1,24 @@
+@use "../base/fonts" as *;
+@use "../base/breakpoints" as *;
+
+.addtask_box {
+  margin-bottom: 30px;
+}
+
+.addtask {
+  margin-top: 10px;
+  padding: 15px;
+  width: 100%;
+  text-align: start;
+
+  @include fonts-set($title-size, $paragraph-weigth, $title-style);
+  cursor: pointer;
+
+  background: #ffffff;
+  border: 2px solid #c8c8c8;
+  border-radius: 5px;
+}
+
+.display_none {
+  display: none !important;
+}

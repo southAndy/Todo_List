@@ -1,0 +1,28 @@
+// font's resource
+
+// roboto style
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+//
+
+$title-size: 24px;
+$subtitle-size: 20px;
+$paragraph-size: 16px;
+
+$title-weight: 500;
+$subtitle-weight: 400;
+$paragraph-weigth: 100;
+
+$title-style: "Roboto-Medium";
+$subtitle-style: "Roboto-Regular";
+$paragraph-style: "Roboto-Medium";
+
+%title {
+  font-size: $title-size;
+  font-family: $title-style;
+}
+
+@mixin fonts-set($size, $weight, $style) {
+  font-size: $size;
+  font-weight: $weight;
+  font-family: $style;
+}
