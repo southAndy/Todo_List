@@ -1,8 +1,9 @@
 # Todo_List
+
 ## 說明
 
-- 原生 JavaScript
-- Vue 3 cdn
+- [原生 JavaScript](https://github.com/southAndy/Todo_List/Vanilla_JS/index.html)
+- [Vue 3 cdn](https://github.com/southAndy/Todo_List/VueJS/index.html)
 
 ### 功能
 
@@ -10,7 +11,6 @@
 - 待辦事項內可以輸入日期、筆記、標註重要性
 - 使用者可以依照 icon 進行編輯、完成 task 等動作
 - 使用者瀏覽時分為三種模式：全部、呈現進行中 task 、 呈現已完成事項
-
 
 ### 設計稿
 
