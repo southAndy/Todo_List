@@ -17,6 +17,8 @@
   </head>
   <body>
     <div id="app">
+      <!-- {{reminderList}} -->
+      <!-- 切換狀態的nav -->
       <header
         :class="[{'background_darkmode':isDarkMode},{header_darkmode:isDarkMode}]"
       >
@@ -53,6 +55,7 @@
       </header>
       <main :class="[{'background_darkmode':isDarkMode}]">
         <div class="container">
+          <!-- 顯示下拉表單 -->
           <div class="addtask_container">
             <button
               :class="[{'background_darkmode':isDarkMode},{text_darkmode:isDarkMode}]"
@@ -130,6 +133,7 @@
               </div>
             </form>
           </div>
+          
           <!-- 根據切換的頁面，決定是誰 -->
           <component :is="nowPage" />
         </div>

@@ -12,6 +12,7 @@ Vue.createApp({
   data() {
     return {
       isShow: false,
+      //當前的頁面，預設為all-todo
       nowPage: "todo-list",
       currentPage: {
         isMyTask: true,
@@ -20,6 +21,8 @@ Vue.createApp({
       },
       //存放渲染資料的陣列
       reminderList: [],
+
+      //紀錄每次新增的內容
       newTodo: {
         title: "",
         date: "",
@@ -42,7 +45,7 @@ Vue.createApp({
     },
     //渲染代辦事項
     createReminder(el) {
-      //呼叫local
+      //取出local的資料
       this.reminderList = JSON.parse(localStorage.getItem("inputList")) || [];
       console.log(this.newTodo, this.reminderList);
       //!!!!! 需解構obj，不然會指向相同記憶體位置
@@ -51,7 +54,6 @@ Vue.createApp({
       localStorage.setItem("inputList", JSON.stringify(this.reminderList));
 
       this.isShow = false;
-      //清除表單內容
     },
     //切換不同頁面的功能
     switchPage(current) {
@@ -158,7 +160,7 @@ Vue.createApp({
   },
 
   created() {
-    console.log("creating");
+    //重整畫面時，會讀取local
     this.reminderList = JSON.parse(localStorage.getItem("inputList")) || [];
   },
 }).mount("#app");

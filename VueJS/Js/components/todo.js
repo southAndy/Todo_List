@@ -1,7 +1,6 @@
 const todo = {
   props: ["localData"],
   data() {
-    props: ["localData"];
     return {
       //透過判斷式決定怎麼渲染
       passData: this.localData || JSON.parse(localStorage.getItem("inputList")),
