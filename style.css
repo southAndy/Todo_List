@@ -1,0 +1,26 @@
+body{
+    background-color: azure;
+}
+
+.wrapper{
+    background-color: aliceblue;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width:50%;
+    text-align: center;
+    margin: 0 auto;
+    padding:15px 0;
+
+    box-sizing: border-box;
+}
+
+
+a{
+    text-decoration: none;
+}
+a:hover{
+    color:brown;
+    border:1px solid;
+}
