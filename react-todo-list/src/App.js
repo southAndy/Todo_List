@@ -5,9 +5,12 @@ import TodoList from './components/TodoList';
 
 
 function App() {
-  // const [count,setCount]=useState(0);
+  
   const [input,setInput]=useState("");
+  //存提醒事項的清單
   const [todos,setTodo]=useState([]);
+  
+  
   return (
     <div className="App">
       <header className="App-header">

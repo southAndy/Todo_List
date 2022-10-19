@@ -24,3 +24,10 @@
 .todo_item-state button:hover{
     background-color: bisque;
 }
+.doing {
+    font-weight: 700;
+}
+.done {
+    text-decoration: line-through;
+
+}
