@@ -22,8 +22,8 @@ function TodoList({todos,setTodo}){
                 <div className="todo_item" key={todo.id}>
                     <input type="checkbox" onClick={()=>finishTodo(todo)} />
                     <div  className={`todo_item-title ${todo.completed?'done':'doing'}`}>{todo.title}</div>
-                    <button >編輯</button>
-                    <button onClick={()=>deletTodo(todo)}>刪除</button>
+                    <button >edit</button>
+                    <button onClick={()=>deletTodo(todo)}>delet</button>
                 </div>
             ))}
         </div>
