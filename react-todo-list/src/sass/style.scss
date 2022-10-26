@@ -1,0 +1,15 @@
+@mixin bg($padding) {
+    background-image: linear-gradient(to bottom, #F1AD56, #DB7290);
+    padding: $padding;
+}
+div {
+    text-align: center;
+    color: white;
+    @include bg(10px);
+    button {
+        &:hover {
+            background-color: #FFD0DD;
+            color: #DB7290;
+        }
+    }
+}

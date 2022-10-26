@@ -1,11 +1,9 @@
 import "../TodoList.css";
-// import {useEffect} from "react";
 function TodoList({todos,setTodo}){
     const deletTodo = ({id})=>{
         setTodo(todos.filter((data)=>data.id!==id))
     }
     const finishTodo = ({completed,id})=>{
-        console.log('heloo',{completed});
         //todo.completed = !todo.completed
         setTodo(todos.filter((todo)=>{
             if(todo.id===id){
@@ -20,7 +18,7 @@ function TodoList({todos,setTodo}){
         <div className="container">
             {todos.map((todo)=>(
                 <div className="todo_item" key={todo.id}>
-                    <input type="checkbox" onClick={()=>finishTodo(todo)} />
+                    <input type="checkbox" onClick={()=>finishTodo(todo)} defaultChecked={todo.completed}/>
                     <div  className={`todo_item-title ${todo.completed?'done':'doing'}`}>{todo.title}</div>
                     <button >edit</button>
                     <button onClick={()=>deletTodo(todo)}>delet</button>
