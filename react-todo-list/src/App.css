@@ -1,10 +1,9 @@
 .App {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: flex-start;
 
   width: 50%;
+  height: 100vh;
   min-height: 100vh;
 
   margin: 0 auto;
@@ -15,18 +14,28 @@
   
   border: 1px solid;
   border-radius: 20px;
+
+  overflow: hidden;
   
 }
-
-
+/* fontawsome style */
+/* .svg-inline--fa{
+  position: absolute;
+  top: 8%;
+  right: 30%;
+} */
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
-
+.App-header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
 
 
 
@@ -37,4 +46,29 @@
   to {
     transform: rotate(360deg);
   }
+}
+.navbar {
+  width:200px;
+  margin-top: 100px;
+  padding: 5px;
+}
+
+.navbar-show{
+  display: flex;
+  flex-direction: column;
+  gap:5px
+}
+.navbar-none{
+  display: none;
+}
+
+.navbar p{
+   margin:5px;
+   font-size: 20px;
+   
+}
+.navbar p:hover{
+  background-color: burlywood;
+  font-weight: 600;
+  
 }
