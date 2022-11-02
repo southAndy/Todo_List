@@ -20,13 +20,15 @@
 
 **Vanillajs/Vuejs**
 
-採用第一屆 THE F2E 的第一關題目的[設計稿](https://hexschool.github.io/THE_F2E_Design/todolist/)，比較適合現代化的設計稿功能，設計風格也較符合當代美感。
+採用第一屆 THE F2E 的第一關題目的[設計稿](https://hexschool.github.io/THE_F2E_Design/todolist/)
 
 **Reactjs**
 
 採用的是 youtube 影片：
 [Build A Todo List App with React from Scratch in 2022 || CRUD App || Including Hooks](https://www.youtube.com/watch?v=dD0MdMRVHoo&t=1449s) 設計稿
 
-## RWD
+### 裝置版本
 
-- mobile:375px / tablet:768px / desktop:1024px
+- mobile:375px
+- tablet:768px
+- desktop:1024px
